@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: #0d0d0d;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.krishna-image {
+  width: 120px;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px #6f42c1);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(-5px); }
+  50% { transform: translateY(5px); }
+}
+.chat-section {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+textarea, select, button {
+  border-radius: 8px !important;
+}
+
+button {
+  background: #6f42c1 !important;
+  color: white !important;
+  box-shadow: 0 0 10px #6f42c1;
+  transition: transform 0.2s;
+}
+button:hover {
+  background: #00d4ff !important;
+  transform: scale(1.05);
+}
+
+.response-output {
+  background: #111;
+  box-shadow: 0 0 10px #6f42c1;
+  border-radius: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #1a1a1a;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+  border-top: 1px solid #333;
+  z-index: 999;
+}
