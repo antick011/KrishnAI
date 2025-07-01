@@ -27,7 +27,7 @@ document.getElementById('askForm').addEventListener('submit', async function (e)
     } else {
       responseBox.innerHTML = `
         <h3>🕉️ Response from Krishna:</h3>
-        <p><strong>Emotion:</strong> ${data.emotion}</p>
+        <p><strong>Verse No.:</strong> ${data.verse_id}</p>
         <p><strong>Verse:</strong> ${data.sanskrit}</p>
         <p><strong>Translation:</strong> ${data.translation}</p>
         <p><strong>Divine Message:</strong> ${data.response}</p>
